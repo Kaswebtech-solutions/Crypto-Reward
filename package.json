@@ -1,0 +1,27 @@
+{
+  "name": "crypto-rewards",
+  "version": "1.0.0",
+  "main": "web/index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "shopify": "shopify",
+    "build": "shopify app build",
+    "dev": "shopify app dev",
+    "info": "shopify app info",
+    "generate": "shopify app generate",
+    "deploy": "shopify app deploy"
+  },
+  "dependencies": {
+    "@shopify/connect-wallet": "^3.0.1",
+    "viem": "^1.21.4",
+    "wagmi": "^1.4.13",
+    "web3-wallet-connect": "^2.2.6"
+  },
+  "author": "sourav",
+  "private": true,
+  "workspaces": [
+    "extensions/*",
+    "web",
+    "web/frontend"
+  ]
+}
